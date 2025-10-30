@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - Freelancer Payment Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Freelancer<span>Track</span></div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="payments.html">Payments</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html" class="active">Settings</a>
+      <a href="home.html" id="logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Settings</h1>
+
+    <div class="settings-card">
+      <h2>Profile Info</h2>
+      <p><strong>Name:</strong> <span id="profile-name"></span></p>
+      <p><strong>Email:</strong> <span id="profile-email"></span></p>
+    </div>
+
+    <div class="settings-card">
+      <h2>Theme</h2>
+      <button id="toggle-theme" class="btn">Toggle Dark Mode</button>
+    </div>
+
+    <div class="settings-card">
+      <h2>Data</h2>
+      <button id="clear-data" class="btn danger">Clear All Data</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 FreelancerTrack | Settings</p>
+  </footer>
+
+  <script src="js/settings.js"></script>
+</body>
+</html>

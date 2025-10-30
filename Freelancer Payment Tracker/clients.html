@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clients - Freelancer Payment Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Freelancer<span>Track</span></div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="clients.html" class="active">Clients</a>
+      <a href="payments.html">Payments</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+      <a href="home.html" id="logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Clients</h1>
+    <form id="client-form" class="form-inline">
+      <input type="text" id="client-name" placeholder="Client Name" required>
+      <input type="text" id="client-project" placeholder="Project" required>
+      <input type="text" id="client-contact" placeholder="Contact" required>
+      <button class="btn" type="submit">Add Client</button>
+    </form>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Project</th>
+          <th>Contact</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="client-list"></tbody>
+    </table>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 FreelancerTrack | All rights reserved.</p>
+  </footer>
+
+  <script src="js/clients.js"></script>
+</body>
+</html>

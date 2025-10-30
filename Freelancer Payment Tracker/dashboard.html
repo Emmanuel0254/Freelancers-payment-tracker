@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Freelancer Payment Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body{
+        height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Freelancer<span>Track</span></div>
+    <nav>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="payments.html">Payments</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+      <a href="home.html" id="logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Welcome back, <span id="username">User</span> 👋</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h2 id="totalClients">0</h2>
+        <p>Total Clients</p>
+      </div>
+      <div class="card">
+        <h2 id="totalPayments">0</h2>
+        <p>Total Payments</p>
+      </div>
+      <div class="card">
+        <h2 id="pendingPayments">0</h2>
+        <p>Pending Payments</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 FreelancerTrack | All rights reserved.</p>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

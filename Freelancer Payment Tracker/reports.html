@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports - Freelancer Payment Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Freelancer<span>Track</span></div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="payments.html">Payments</a>
+      <a href="reports.html" class="active">Reports</a>
+      <a href="settings.html">Settings</a>
+      <a href="home.html" id="logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Reports Summary</h1>
+    <div class="cards">
+      <div class="card">
+        <h2 id="totalIncome">$0</h2>
+        <p>Total Income</p>
+      </div>
+      <div class="card">
+        <h2 id="pendingIncome">$0</h2>
+        <p>Pending Payments</p>
+      </div>
+    </div>
+
+    <section class="chart-section">
+      <h2>Income Distribution</h2>
+      <div id="chart" class="chart-placeholder"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 FreelancerTrack | Reports Summary</p>
+  </footer>
+
+  <script src="js/reports.js"></script>
+</body>
+</html>

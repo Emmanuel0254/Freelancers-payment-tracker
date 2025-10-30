@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payments - Freelancer Payment Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Freelancer<span>Track</span></div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="payments.html" class="active">Payments</a>
+      <a href="reports.html">Reports</a>
+      <a href="settings.html">Settings</a>
+      <a href="home.html" id="logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Payments</h1>
+    <form id="payment-form" class="form-inline">
+      <input type="text" id="payment-client" placeholder="Client Name" required>
+      <input type="number" id="payment-amount" placeholder="Amount" required>
+      <select id="payment-status" required>
+        <option value="Paid">Paid</option>
+        <option value="Pending">Pending</option>
+      </select>
+      <button class="btn" type="submit">Add Payment</button>
+    </form>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Client</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="payment-list"></tbody>
+    </table>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 FreelancerTrack | All rights reserved.</p>
+  </footer>
+
+  <script src="js/payments.js"></script>
+</body>
+</html>
